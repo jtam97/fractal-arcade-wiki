@@ -14,13 +14,16 @@ const config: QuartzConfig = {
     analytics: {
       provider: 'plausible'
     },
-    baseUrl: "www.justinztam.com/crochet-wiki",
+    baseUrl: "crochet-wiki.justinztam.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
+    generateSocialImages: true,
+    locale: "en-US",
     theme: {
       typography: {
         header: "Playfair Display",
         body: "Source Sans Pro",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
@@ -32,6 +35,7 @@ const config: QuartzConfig = {
           secondary: "#284b63",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#b3aa0255",
         },
         darkMode: {
           light: "#161618",
@@ -45,6 +49,8 @@ const config: QuartzConfig = {
           textHighlight: "#b3aa0288",
         },
       },
+      cdnCaching: true,
+      fontOrigin: "googleFonts",
     },
   },
   plugins: {
