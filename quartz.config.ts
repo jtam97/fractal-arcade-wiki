@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "A Crochet Wiki",
+    pageTitle: "Fractal Arcade Wiki",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: 'plausible'
     },
-    baseUrl: "crochet-wiki.justinztam.com",
+    baseUrl: "fractalarcade.justinztam.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: true,
