@@ -51,6 +51,9 @@ const config: QuartzConfig = {
       },
       cdnCaching: true,
       fontOrigin: "googleFonts",
+      cssStyles: {
+        custom: "./quartz/styles/custom.scss",
+      },
     },
   },
   plugins: {

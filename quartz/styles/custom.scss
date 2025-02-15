@@ -1,3 +1,86 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+/* Add your custom styles here */
+
+/* Customize search bar */
+.search {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 0; /* Remove rounded corners for pixel look */
+    border: 2px solid var(--dark);
+    image-rendering: pixelated;
+    box-shadow: 4px 4px 0 var(--dark);
+    transition: all 0.2s ease;
+
+    &:focus-within {
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0 var(--dark);
+    }
+
+    & > #search-icon {
+        color: var(--dark);
+    }
+
+    & > #search-text {
+        background: transparent;
+        color: var(--dark);
+        &::placeholder {
+        color: var(--gray);
+        }
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+/* Create a title gif container */
+.title-gif {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 600px; /* Adjust based on your gif size */
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+  }
+}
+
+/* Customize the article title with gif */
+.article-title {
+  text-align: center;
+  margin-top: 1rem;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 700px; /* Adjust based on your gif size */
+    height: 350px; /* Adjust based on your gif height */
+    margin: 0 auto 2rem;
+    background-image: url('/static/background.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+  }
+
+  /* Hide the title text on the homepage only */
+  .index & h1 {
+    display: none;
+  }
+}
