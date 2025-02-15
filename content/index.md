@@ -1,12 +1,13 @@
 ---
-title: Welcome to Fractal Arcade Wiki
+title: Homepage
 ---
+Welcome to the Fractal Arcade Wiki! This is an exploration of unique algorithms and technical designs in games - sometimes beautiful, sometimes hacky, sometimes lazy - all fun!
 
-Welcome to the Fractal Arcade Wiki! This is the central hub for all information about our games and projects.
+![[static/assets/background.gif|300]]
 
-## Recent Updates
+## Featured Articles
 
-- [About](About.md)
-- [Games](games/)
+- [About Me and the Fractal Arcade](About.md)
+- [Path of Exile - Same Map, Different Experience](games/PathOfExile.md)
+- [Portals - The Past and the Present](games/Portals.md)
 
-Feel free to explore the wiki using the navigation or search function!
