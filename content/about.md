@@ -4,7 +4,7 @@ title: About Me and the Fractal Arcade
 
 ## A bit about me!
 
-I'm Justin, a software engineer, a CS/bioinformatics researcher, and a video game nerd! I love games but know little about what makes them tick, both in code and in enjoyment. So this is my exploration of unique algorithms and technical designs in games - sometimes beautiful, sometimes hacky, sometimes lazy - all fun!
+I'm Justin, a software engineer, a CS/bioinformatics researcher, and a video game nerd! I love games but know little about what makes them tick, both in code and in enjoyment. So this is my exploration of unique algorithms and technical designs in games - sometimes beautiful, sometimes hacky, sometimes lazy - all fun! Honestly, it's also a way for me to rave about my favorite games and what I find to be so special about them.
 
 ## The Fractal Arcade
 
