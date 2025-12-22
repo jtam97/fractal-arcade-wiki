@@ -10,7 +10,7 @@ Portal is a first-person puzzle game where the player must navigate through a se
 
 1. **Visual Recursion** - You can see through portals and into the other side. What makes this mind-bending is that you can see through portals recursively:
 
-![[static/assets/portal-look-recursive.jpg]]
+![[attachments/portal-look-recursive.jpg]]
 
 2. **Momentum Conservation** - Objects maintain their velocity when passing through portals. This enables fascinating mechanics like the infinite fall:
 
@@ -64,7 +64,7 @@ So how do you render something like this graphically? The method they use is som
 4. Limit rendering to portal B's visible area using stencil buffer.
 ~~~
 
-![[static/assets/portal.png]]
+![[attachments/portal.png]]
 
 An elegant and mathematically simple solution.
 

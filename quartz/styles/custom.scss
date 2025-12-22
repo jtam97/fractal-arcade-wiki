@@ -72,7 +72,7 @@
 //     max-width: 700px; /* Adjust based on your gif size */
 //     height: 350px; /* Adjust based on your gif height */
 //     margin: 0 auto 2rem;
-//     background-image: url('/static/background.gif');
+//     background-image: url('/attachments/background.gif');
 //     background-size: contain;
 //     background-position: center;
 //     background-repeat: no-repeat;
@@ -214,6 +214,17 @@ pre {
   border: 2px solid #7ea384;
   border-radius: 2px;
   box-shadow: 4px 4px 0 rgba(89, 131, 94, 0.1);
+  overflow-x: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 100%;
+
+  code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 }
 
 /* Table styling */
@@ -247,4 +258,72 @@ table {
   margin: 1rem 0;
   opacity: 0.5;
   image-rendering: pixelated;
+}
+
+/* Explorer item separators */
+#explorer-content {
+  ul {
+    li {
+      position: relative;
+
+      /* Add a short light line between items */
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        width: 80%;
+        height: 2px;
+        background: rgba(51, 64, 53, 0.096);
+      }
+
+      /* Don't add line to last item */
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Remove arrows and keep Explorer and Table of Contents always open */
+/* Hide arrows for Explorer and Table of Contents */
+button#explorer .fold,
+button#toc .fold {
+  display: none !important;
+}
+
+/* Keep Explorer content always visible (cannot be collapsed) */
+#explorer-content {
+  max-height: 100% !important;
+  visibility: visible !important;
+  transition: none !important;
+
+  &.collapsed {
+    max-height: 100% !important;
+    visibility: visible !important;
+  }
+}
+
+/* Keep Table of Contents content always visible (cannot be collapsed) */
+#toc-content {
+  max-height: 100% !important;
+  visibility: visible !important;
+  transition: none !important;
+
+  &.collapsed {
+    max-height: 100% !important;
+    visibility: visible !important;
+  }
+}
+
+/* Disable pointer events on Explorer and TOC buttons to prevent collapsing */
+button#explorer,
+button#toc {
+  pointer-events: none;
+  cursor: default;
+
+  /* Re-enable pointer events for any interactive elements inside */
+  h2, h3 {
+    pointer-events: auto;
+  }
 }
