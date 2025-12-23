@@ -182,14 +182,14 @@ a {
       gap: 2rem;
       top: 0;
       box-sizing: border-box;
-      padding: $topSpacing 2rem 2rem 2rem;
+      padding: 2rem 1rem 2rem 1rem; /* Reduced from $topSpacing (6rem) to 2rem */
       display: flex;
       height: 100vh;
       position: sticky;
     }
 
     & .sidebar.left {
-      z-index: 1;
+      z-index: 0;
       grid-area: grid-sidebar-left;
       flex-direction: column;
       @media all and ($mobile) {
@@ -233,7 +233,7 @@ a {
 
     & .page-header {
       grid-area: grid-header;
-      margin: $topSpacing 0 0 0;
+      margin: 2rem 0 0 0; /* Reduced from $topSpacing (6rem) to 2rem */
       @media all and ($mobile) {
         margin-top: 0;
         padding: 0;

@@ -1,97 +1,16 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* ==========================================================================
+   Nature-Inspired Theme Customizations
+   ========================================================================== */
 
-/* Add your custom styles here */
-
-/* Customize search bar */
-.search {
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 0; /* Remove rounded corners for pixel look */
-    border: 2px solid var(--dark);
-    image-rendering: pixelated;
-    box-shadow: 4px 4px 0 var(--dark);
-    transition: all 0.2s ease;
-
-    &:focus-within {
-        transform: translate(2px, 2px);
-        box-shadow: 1px 1px 0 var(--dark);
-    }
-
-    & > #search-icon {
-        color: var(--dark);
-    }
-
-    & > #search-text {
-        background: transparent;
-        color: var(--dark);
-        &::placeholder {
-        color: var(--gray);
-        }
-    }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--light);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--secondary);
-  border-radius: 4px;
-}
-
-/* Create a title gif container */
-// .title-gif {
-//   display: flex;
-//   justify-content: center;
-//   margin: 2rem auto;
-//   max-width: 600px; /* Adjust based on your gif size */
-//   width: 100%;
-
-//   img {
-//     width: 100%;
-//     height: auto;
-//     image-rendering: pixelated;
-//   }
-// }
-
-/* Customize the article title with gif */
-// .article-title {
-//   text-align: center;
-//   margin-top: 1rem;
-
-//   &::before {
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     max-width: 700px; /* Adjust based on your gif size */
-//     height: 350px; /* Adjust based on your gif height */
-//     margin: 0 auto 2rem;
-//     background-image: url('/attachments/background.gif');
-//     background-size: contain;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     image-rendering: pixelated;
-//   }
-
-//   /* Hide the title text on the homepage only */
-//   .index & h1 {
-//     display: none;
-//   }
-// }
-
-/* Nature-inspired theme adjustments */
+/* Base Theme Colors */
 body {
   background-color: #f5f3e6; /* Soft parchment color */
   color: #2c4a3e; /* Forest green */
 }
 
-/* Pixel border for content containers */
+/* Content Containers */
 .content {
   border: 2px solid #7ea384; /* Sage green */
   box-shadow: 4px 4px 0 rgba(89, 131, 94, 0.2);
@@ -99,9 +18,13 @@ body {
   padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 2px;
+  /* Allow popovers to escape - don't clip absolutely positioned children */
+  overflow: visible;
+  position: relative;
 }
 
-/* Natural headings */
+
+/* Typography */
 h1, h2, h3 {
   font-family: "Quicksand", sans-serif; /* A softer, rounded font */
   color: #446c54; /* Deep forest green */
@@ -122,7 +45,7 @@ h1, h2, h3 {
   }
 }
 
-/* Leaf-inspired links */
+/* Links */
 a {
   color: #588157;
   text-decoration: none;
@@ -142,40 +65,7 @@ a {
   }
 }
 
-/* Natural scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  background: #f5f3e6;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #a7c957;
-  border: 2px solid #f5f3e6;
-  border-radius: 10px;
-
-  &:hover {
-    background: #7ea384;
-  }
-}
-
-/* Pixel art buttons/interactive elements */
-button, .search {
-  border: 2px solid #7ea384;
-  background: rgba(255, 255, 255, 0.9);
-  color: #446c54;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  image-rendering: pixelated;
-
-  &:hover {
-    background: #f8f9fa;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 0 #7ea384;
-  }
-}
-
-/* Nature-style blockquotes */
+/* Blockquotes */
 blockquote {
   border-left: none;
   position: relative;
@@ -197,7 +87,47 @@ blockquote {
   }
 }
 
-/* Navigation elements */
+/* ==========================================================================
+   Interactive Elements
+   ========================================================================== */
+
+/* Buttons */
+button {
+  border: 2px solid #7ea384;
+  background: rgba(255, 255, 255, 0.9);
+  color: #446c54;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  image-rendering: pixelated;
+
+  &:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 #7ea384;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #f5f3e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a7c957;
+  border: 2px solid #f5f3e6;
+  border-radius: 10px;
+
+  &:hover {
+    background: #7ea384;
+  }
+}
+
+/* ==========================================================================
+   Navigation & Sidebar
+   ========================================================================== */
+
 .sidebar {
   background: rgba(245, 243, 230, 0.95);
   border-right: 2px solid #a7c957;
@@ -208,7 +138,22 @@ blockquote {
   }
 }
 
-/* Code blocks with a natural theme */
+.folder-container {
+  margin-left: 0.5rem;
+}
+
+/* Remove borders from folder containers in explorer */
+#explorer-content .content,
+.folder-outer .content,
+.explorer .content {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ==========================================================================
+   Code Blocks
+   ========================================================================== */
+
 pre {
   background: #f8f9fa !important;
   border: 2px solid #7ea384;
@@ -227,7 +172,10 @@ pre {
   }
 }
 
-/* Table styling */
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
 table {
   border: 2px solid #7ea384;
   border-radius: 2px;
@@ -247,7 +195,10 @@ table {
   }
 }
 
-/* Decorative elements */
+/* ==========================================================================
+   Decorative Elements
+   ========================================================================== */
+
 .article-title::after {
   content: "";
   display: block;
@@ -258,72 +209,4 @@ table {
   margin: 1rem 0;
   opacity: 0.5;
   image-rendering: pixelated;
-}
-
-/* Explorer item separators */
-#explorer-content {
-  ul {
-    li {
-      position: relative;
-
-      /* Add a short light line between items */
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 1rem;
-        width: 80%;
-        height: 2px;
-        background: rgba(51, 64, 53, 0.096);
-      }
-
-      /* Don't add line to last item */
-      &:last-child::after {
-        display: none;
-      }
-    }
-  }
-}
-
-/* Remove arrows and keep Explorer and Table of Contents always open */
-/* Hide arrows for Explorer and Table of Contents */
-button#explorer .fold,
-button#toc .fold {
-  display: none !important;
-}
-
-/* Keep Explorer content always visible (cannot be collapsed) */
-#explorer-content {
-  max-height: 100% !important;
-  visibility: visible !important;
-  transition: none !important;
-
-  &.collapsed {
-    max-height: 100% !important;
-    visibility: visible !important;
-  }
-}
-
-/* Keep Table of Contents content always visible (cannot be collapsed) */
-#toc-content {
-  max-height: 100% !important;
-  visibility: visible !important;
-  transition: none !important;
-
-  &.collapsed {
-    max-height: 100% !important;
-    visibility: visible !important;
-  }
-}
-
-/* Disable pointer events on Explorer and TOC buttons to prevent collapsing */
-button#explorer,
-button#toc {
-  pointer-events: none;
-  cursor: default;
-
-  /* Re-enable pointer events for any interactive elements inside */
-  h2, h3 {
-    pointer-events: auto;
-  }
 }

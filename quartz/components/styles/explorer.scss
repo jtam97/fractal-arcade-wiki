@@ -24,29 +24,51 @@
 }
 
 button#explorer {
-  background-color: transparent;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  padding: 0;
-  color: var(--dark);
-  display: flex;
-  align-items: center;
+  /* Remove all button styling - convert to plain text */
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: default !important;
+  pointer-events: none !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: none !important;
+    border: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    cursor: default !important;
+  }
+
+  &.collapsed {
+    transform: none !important;
+  }
 
   & h2 {
+    font-family: "Quicksand", sans-serif;
+    color: #446c54; /* Deep forest green */
     font-size: 1rem;
-    display: inline-block;
+    font-weight: 600;
     margin: 0;
+    padding: 0;
+    display: block !important;
+    pointer-events: none;
   }
 
   & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
-  }
-
-  &.collapsed .fold {
-    transform: rotateZ(-90deg);
+    display: none !important;
   }
 }
 
@@ -68,19 +90,14 @@ button#explorer {
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 100%;
-  transition:
-    max-height 0.35s ease,
-    visibility 0s linear 0s;
+  max-height: 100% !important;
+  transition: none !important;
   margin-top: 0.5rem;
-  visibility: visible;
+  visibility: visible !important;
 
   &.collapsed {
-    max-height: 0;
-    transition:
-      max-height 0.35s ease,
-      visibility 0s linear 0.35s;
-    visibility: hidden;
+    max-height: 100% !important;
+    visibility: visible !important;
   }
 
   & ul {
@@ -91,10 +108,34 @@ button#explorer {
       max-height 0.35s ease,
       transform 0.35s ease,
       opacity 0.2s ease;
-    & li > a {
-      color: var(--dark);
-      opacity: 0.75;
-      pointer-events: all;
+    & li {
+      & > a {
+        color: var(--dark);
+        opacity: 0.75;
+        pointer-events: all;
+      }
+
+      /* Add separator lines only for items inside folders, not for folder-outer elements or explorer-end */
+      &:not(:has(> .folder-outer)):not(#explorer-end) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 1rem;
+          width: 80%;
+          height: 2px;
+          background: rgba(51, 64, 53, 0.096);
+        }
+      }
+    }
+
+    /* Remove separator line from explorer-end */
+    #explorer-end {
+      &::after {
+        display: none !important;
+      }
     }
   }
   > #explorer-ul {

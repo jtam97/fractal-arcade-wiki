@@ -3,9 +3,11 @@ title: Homepage
 ---
 
 > [!abstract] Welcome to the Fractal Arcade Wiki!
-> This is an exploration of unique algorithms and technical designs in games - sometimes ==beautiful==, sometimes ==hacky==, sometimes ==lazy== - all of which make them a herculean feat of creativity and enjoyment.
+> This is an exploration of unique algorithms and technical designs in games - sometimes beautiful, sometimes hacky, sometimes lazy - all of which make them a herculean feat of creativity and enjoyment.
 
-![[attachments/background.gif]]
+<div style="text-align: center;">
+<img src="/attachments/background.gif" alt="Background" />
+</div>
 
 ---
 
