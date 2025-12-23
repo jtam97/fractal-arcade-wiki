@@ -47,9 +47,9 @@ I'll also have some posts here that are pure scientific conceptualization and in
 ## 📚 Featured Articles
 
 > [!tip] Explore these deep dives into game design and mechanics
-> - 🗺️ [**Path of Exile** - Same Map, Different Experience](games/PathOfExile.md) *In Progress*
-> - 🌀 [**Portal (2007)** - A Spatial Illusion](games/Portals.md)
-> - 🦸 [**Marvel Rivals** - Or Portal 2.5](games/MarvelRivals.md) *In Progress*
+> - 🗺️ [**Path of Exile** - Same Map, Different Experience](Games/PathOfExile.md) *In Progress*
+> - 🌀 [**Portal (2007)** - A Spatial Illusion](Games/Portals.md)
+> - 🦸 [**Marvel Rivals** - Or Portal 2.5](Games/MarvelRivals.md) *In Progress*
 
 > [!info] Explore some science conceptualization notes I took for my own understanding - it contains my intuition if I were to teach it
 > - 🧠 [**AI & LLMs**](Science/AI-LLMs.md) - Notes from Stanford CS229 on large language models
