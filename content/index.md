@@ -56,4 +56,4 @@ I'll also have some posts here that are pure scientific conceptualization and in
 > [!info] Explore some science conceptualization notes I took for my own understanding - it contains my intuition if I were to teach it
 > - 🧠 [**AI & LLMs**](Science/AI-LLMs.md) - Notes from Stanford CS229 on large language models
 > - 📐 [**Linear Algebra**](Science/LinearAlgebra.md) - Intuition from 3Blue1Brown's series on linear transformations
-> - 🔄 [**Laplace Transform**](Science/LaplaceTransform.md) - Conceptual understanding from 3Blue1Brown
+> - 🔄 [**Laplace Transform**](Laplace%20Transform.md) - Conceptual understanding from 3Blue1Brown
