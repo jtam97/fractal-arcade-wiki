@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Fractal Arcade Wiki</title>
+      <link>https://fractalarcade.justinztam.com</link>
+      <description>Last 10 notes on Fractal Arcade Wiki</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Homepage</title>
+    <link>https://fractalarcade.justinztam.com/</link>
+    <guid>https://fractalarcade.justinztam.com/</guid>
+    <description>...</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>AI &amp; LLMs</title>
+    <link>https://fractalarcade.justinztam.com/Science/AI-LLMs</link>
+    <guid>https://fractalarcade.justinztam.com/Science/AI-LLMs</guid>
+    <description>...</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>Laplace Transform</title>
+    <link>https://fractalarcade.justinztam.com/Science/Laplace-Transform</link>
+    <guid>https://fractalarcade.justinztam.com/Science/Laplace-Transform</guid>
+    <description>...</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>Linear Algebra</title>
+    <link>https://fractalarcade.justinztam.com/Science/LinearAlgebra</link>
+    <guid>https://fractalarcade.justinztam.com/Science/LinearAlgebra</guid>
+    <description>...</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>Marvel Rivals - In-depth look at portal mechanics</title>
+    <link>https://fractalarcade.justinztam.com/Games/MarvelRivals</link>
+    <guid>https://fractalarcade.justinztam.com/Games/MarvelRivals</guid>
+    <description>Marvel Rivals is a free-to-play team shooter, a Marvel version of Overwatch and one of my current favorite competitive games.</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>Path of Exile - Same Map, Different Experience</title>
+    <link>https://fractalarcade.justinztam.com/Games/PathOfExile</link>
+    <guid>https://fractalarcade.justinztam.com/Games/PathOfExile</guid>
+    <description>I’ve been playing Path of Exile for years now - countless leagues and countless more characters. I’ll give a basic rundown of the game, if you’re familiar you can skip to the algorithm section.</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item><item>
+    <title>Portal (2007) - A Spatial Illusion</title>
+    <link>https://fractalarcade.justinztam.com/Games/Portals</link>
+    <guid>https://fractalarcade.justinztam.com/Games/Portals</guid>
+    <description>Portal, released by Valve in 2007, is a critically acclaimed puzzle game that’s a must-play for any puzzle game enthusiast. Core Mechanics Portal is a first-person puzzle game where the player must navigate through a series of puzzles using a portal gun.</description>
+    <pubDate>Fri, 26 Dec 2025 21:20:52 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
